@@ -14,9 +14,8 @@ By knowing the future trends, we can look for spikes and anamolies about the foo
 
 Please look into respective folders on how analysis and predictions are made. Here we have thre food categories.
 
-[IceCream](ice cream)
+[IceCream](ice cream/README.md)
 
-Chicken: 
 #### Technologies used
 Python, Time Series analysis and forecasting, prophet
 
