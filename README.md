@@ -12,6 +12,9 @@ For this use case, three food categories(Chicken, Fries and Ice cream) are taken
 
 By predicting the future trends, we can look for spikes and anamolies about the food quality and preventive measures can be taken from food being detoriated. Also we can build a reporting mechanism which can send high proirity emails and messages to floor associates and managers regarding the upcoming food quality spikes.
 
+### Analysis and predictions
+Please look into analysis and predictions folder where past health trends and future health trends (predictions) were plotted as graphs.
+
 #### Technologies used
 Python, Time Series analysis and forecasting, prophet
 
