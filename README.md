@@ -2,7 +2,7 @@
 
 
 ### Problem Statement:
-To increase the life span of the food and prevent it from detoriation, it will be stored in cold storage warehouses. These warehouses became smart by using IIOT (Industrial internet of things) which helps an organization to increase energy savings, efficiency, and operational insight by instrumenting cold storage warehouse with intelligent LED lighting and smart sensor-based Industrial IoT (IIoT) solutions. Here comes the problem, as these IIoT is more concentrating on the infrastructure and environment, there is still a chance that foods which are being stored in these warehouses may loose its freshness and quality because of many factors like fluctuation in food temparatures, types of food packaging and many factors. 
+To increase the life span of the food and prevent it from detoriation, it will be stored in cold storage warehouses. These warehouses became smart by using IIOT (Industrial internet of things) which helps an organization to increase energy savings, efficiency, and operational insight by instrumenting cold storage warehouse with intelligent LED lighting and smart sensor-based Industrial IoT (IIoT) solutions. Here comes the problem, as these IIoT is more concentrating on the infrastructure and environment, there is still a chance that foods which are being stored in these warehouses may loose its freshness and quality because of many factors like fluctuation in food temparatures, types of food packaging, humidity levels and many factors. 
 
 
 ### Use Case and implementation
