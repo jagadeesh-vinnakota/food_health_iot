@@ -6,7 +6,7 @@ To increase the life span of the food and prevent it from detoriation, it will b
 
 
 ### Use Case and implementation
-By using an IOT device like a sensor which can report the health status and quality of the food like its temparatures, state and more information, we can analyze the trend about food quality and predict the future trend about food quality and health.
+By using an IOT device like a sensor which can report the health status and quality of the food like its temparatures, state and more information, we can analyze the past trend about food quality and predict the future trend about food quality and health.
 
 For this use case, three food categories(Chicken, Fries and Ice cream) are taken which are to be mainatianed in different temparature limits to prevent food from being detoriated. If the temparature goes above limit or below limit, food will loose its freshness and starts detoriating. Using Machine Learning techniques, for these three food categories, identified the past trends about food quality and predicted future food quality trends.
 
