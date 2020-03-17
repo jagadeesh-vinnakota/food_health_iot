@@ -1,0 +1,17 @@
+SID,WID,ZID,Senorplace
+s1,wh1,zone1,Top
+s2,wh1,zone1,bottom
+s3,wh1,zone2,top
+s4,wh1,zone2,bottom
+s5,wh2,zone1,top
+s6,wh2,zone1,bottom
+s7,wh2,zone2,top
+s8,wh2,zone2,bottom
+s9,wh3,zone1,top
+s10,wh3,zone1,bottom
+s11,wh3,zone2,top
+s12,wh3,zone2,bottom
+s13,wh4,zone1,top
+s14,wh4,zone1,bottom
+s15,wh4,zone2,top
+s16,wh4,zone2,bottom

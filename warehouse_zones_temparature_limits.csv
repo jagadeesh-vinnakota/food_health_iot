@@ -1,0 +1,9 @@
+WID,ZID,Minimum_temparature,Maximum_temparature
+wh1,zone1,32,39.2
+wh1,zone2,50,54
+wh2,zone1,-20,0
+wh2,zone2,44.9,50
+wh3,zone1,32,39.2
+wh3,zone2,50,54
+wh4,zone1,-20,0
+wh4,zone2,44.9,50
