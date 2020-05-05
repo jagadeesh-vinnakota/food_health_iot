@@ -28,7 +28,7 @@ def generate_censordata(sensor_location, sensor_id, high_temparature, low_tempar
     tomorrow = today + datetime.timedelta(days=1)
     day_after = today + datetime.timedelta(days=2)
     # start='1/10/2020', end='3/3/2020'
-    date_rng = pd.date_range(start='1/10/2020', end=tomorrow, freq='30T')
+    date_rng = pd.date_range(start='1/10/2020', end=today, freq='30T')
     my_list = []
     for _ in range(len(date_rng)):
         my_list.append(randint(low_temparature - 3, high_temparature + 3))
@@ -122,3 +122,83 @@ def generate_sensors_data():
                       high_temparature=50, low_temparature=44)
 
     save_warehouse_zone_data(warehouse_zone='zone2', warehouse_name='wh4')
+
+def generate_censordata_append(sensor_location, sensor_id, high_temparature, low_temparature, warehouse_name, warehouse_zone):
+    file_path = os.path.join('.', warehouse_name, warehouse_zone, sensor_location + ".csv")
+    today = datetime.date.today()
+    tomorrow = today + datetime.timedelta(days=1)
+    day_after = today + datetime.timedelta(days=2)
+    # start='1/10/2020', end='3/3/2020'
+    date_rng = pd.date_range(start=today, end=tomorrow, freq='30T')
+    my_list = []
+    for _ in range(len(date_rng)):
+        my_list.append(randint(low_temparature - 3, high_temparature + 3))
+    data = pd.DataFrame(index=date_rng)
+    data['temparature'] = my_list
+    data['ZID'] = warehouse_zone
+    data['WID'] = warehouse_name
+    data['sensorplace'] = sensor_location
+    # data_final = data.iloc[:1]
+    data.to_csv(file_path, mode='a', index=True, header=False)
+
+
+def generate_sensors_data_append():
+    # Creating data for warehouse 1 zone 1 top sensor
+    generate_censordata_append(sensor_id='s1', sensor_location='top', warehouse_zone='zone1', warehouse_name = 'wh1',
+                      high_temparature=39, low_temparature=32)
+
+    # Creating data for warehouse 1 zone 1 bottom sensor
+    generate_censordata_append(sensor_id='s2', sensor_location='bottom', warehouse_zone='zone1', warehouse_name='wh1',
+                      high_temparature=39, low_temparature=32)
+
+    save_warehouse_zone_data(warehouse_zone='zone1', warehouse_name = 'wh1')
+
+    # Creating data for warehouse 1 zone 2 top sensor
+    generate_censordata_append(sensor_id='s3', sensor_location='top', warehouse_zone='zone2', warehouse_name = 'wh1',
+                      high_temparature=54, low_temparature=50)
+
+    # Creating data for warehouse 1 zone 2 bottom sensor
+    generate_censordata_append(sensor_id='s4', sensor_location='bottom', warehouse_zone='zone2', warehouse_name='wh1',
+                      high_temparature=54, low_temparature=50)
+
+    save_warehouse_zone_data(warehouse_zone='zone2', warehouse_name='wh1')
+
+    # Creating data for warehouse 2 zone 1 top sensor
+    generate_censordata_append(sensor_id='s5', sensor_location='top', warehouse_zone='zone1', warehouse_name= 'wh2',
+                      high_temparature=0, low_temparature=-20)
+
+    # Creating data for warehouse 2 zone 1 bottom sensor
+    generate_censordata_append(sensor_id='s6', sensor_location='bottom', warehouse_zone='zone1', warehouse_name='wh2',
+                      high_temparature=0, low_temparature=-20)
+
+    save_warehouse_zone_data(warehouse_zone='zone1', warehouse_name='wh2')
+
+    # Creating data for warehouse 2 zone 2 top sensor
+    generate_censordata_append(sensor_id='s7', sensor_location='top', warehouse_zone='zone2', warehouse_name= 'wh2',
+                      high_temparature=50, low_temparature=45)
+
+    # Creating data for warehouse 2 zone 2 bottom sensor
+    generate_censordata_append(sensor_id='s8', sensor_location='bottom', warehouse_zone='zone2', warehouse_name= 'wh2',
+                      high_temparature=50, low_temparature=45)
+
+    save_warehouse_zone_data(warehouse_zone='zone2', warehouse_name='wh2')
+
+    # Creating data for warehouse 3 zone 1 top sensor
+    generate_censordata_append(sensor_id='s9', sensor_location='top', warehouse_zone='zone1', warehouse_name='wh3',
+                      high_temparature=39, low_temparature=32)
+
+    # Creating data for warehouse 3 zone 1 bottom sensor
+    generate_censordata_append(sensor_id='s10', sensor_location='bottom', warehouse_zone='zone1', warehouse_name='wh3',
+                      high_temparature=39, low_temparature=32)
+
+    save_warehouse_zone_data(warehouse_zone='zone1', warehouse_name='wh3')
+
+    # Creating data for warehouse 3 zone 2 top sensor
+    generate_censordata_append(sensor_id='s11', sensor_location='top', warehouse_zone='zone2', warehouse_name = 'wh3',
+                      high_temparature=54, low_temparature=50)
+
+    # Creating data for warehouse 3 zone 2 bottom sensor
+    generate_censordata_append(sensor_id='s12', sensor_location='bottom', warehouse_zone='zone2', warehouse_name= 'wh3',
+                      high_temparature=54, low_temparature=50)
+
+    save_warehouse_zone_data(warehouse_zone='zone2', warehouse_name='wh3')
