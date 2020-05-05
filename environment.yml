@@ -33,7 +33,6 @@ dependencies:
   - flask-compress=1.4.0
   - freetype=2.9.1
   - holidays=0.10.1
-  - icc_rt=2019.0.0
   - icu=58.2
   - idna=2.8
   - importlib_metadata=1.5.0
@@ -50,7 +49,6 @@ dependencies:
   - jupyter_core=4.6.1
   - kiwisolver=1.1.0
   - libpng=1.6.37
-  - libpython=2.0
   - libsodium=1.0.16
   - lunarcalendar=0.0.9
   - markupsafe=1.1.1
@@ -91,7 +89,6 @@ dependencies:
   - python=3.7.6
   - python-dateutil=2.8.1
   - pytz=2019.3
-  - pywinpty=0.5.7
   - pyyaml=5.3
   - pyzmq=18.1.1
   - qt=5.9.7
@@ -110,13 +107,9 @@ dependencies:
   - tornado=6.0.3
   - traitlets=4.3.3
   - urllib3=1.25.8
-  - vc=14.1
-  - vs2015_runtime=14.16.27012
   - wcwidth=0.1.8
   - webencodings=0.5.1
   - wheel=0.34.2
-  - win_inet_pton=1.1.0
-  - wincertstore=0.2
   - winpty=0.4.3
   - yaml=0.1.7
   - zeromq=4.3.1
