@@ -203,5 +203,5 @@ dependencies:
     - werkzeug==0.16.1
     - wtforms==2.2.1
     - zope-deprecation==4.4.0
-prefix: C:\Users\jagad\Anaconda3\envs\iiot_env
+prefix:
 
